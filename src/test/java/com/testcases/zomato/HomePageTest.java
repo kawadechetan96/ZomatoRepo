@@ -1,6 +1,7 @@
 package com.testcases.zomato;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -27,13 +28,22 @@ public class HomePageTest extends TestBase{
 					public   void delhi_link_test()
 					{
 						homepage.verify_delhi_link1();
-						Assert.assertEquals(driver.getCurrentUrl(), "Checkout Best Food Places To Eat In Delhi NCR | Zomato");
+						String url=driver.getTitle();
+						System.out.println(url);
+						Assert.assertEquals(url, "Checkout Best Food Places To Eat In Delhi NCR | Zomato");
 					}
 					
 					@Test(priority=2)
 					public   void kolkata_link_test()
 					{
 						homepage.verify_kolkata_link();
-						Assert.assertEquals(driver.getCurrentUrl(), "Checkout Best Food Places To Eat In Kolkata | Zomato");
+						String url=driver.getTitle();
+						System.out.println(url);
+						Assert.assertEquals(url, "Checkout Best Food Places To Eat In Kolkata | Zomato");
+					}
+					@AfterMethod
+					public void teardown()
+					{
+						driver.close();
 					}
 }

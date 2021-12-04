@@ -37,7 +37,7 @@ public class HomePage extends TestBase {
 								
 								public  KolkataPage verify_kolkata_link()
 								{
-									delhi.click();
+									kolkata.click();
 									return new KolkataPage();
 								}
 	
