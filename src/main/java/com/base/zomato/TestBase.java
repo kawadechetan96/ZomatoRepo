@@ -13,7 +13,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties pro;
 				
-								TestBase()
+								public TestBase()
 								{
 									try{
 									File source =new File("E:/Selenium Programs/Zomatoapp/src/main/java/com/config/zomato/Configuration.property");
