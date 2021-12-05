@@ -20,6 +20,9 @@ public class HomePage extends TestBase {
 								@FindBy(xpath="//a[text()='Mumbai']")
 								WebElement mumbai;
 								
+								@FindBy(xpath="//a[text()='Goa']")
+								WebElement goa;
+								
 								@FindBy(xpath="//a[text()='Pune']")
 								WebElement pune;
 	
@@ -39,6 +42,12 @@ public class HomePage extends TestBase {
 								{
 									kolkata.click();
 									return new KolkataPage();
+								}
+								
+								public  GoaPage verify_goa_link()
+								{
+									goa.click();
+									return new GoaPage();
 								}
 	
 

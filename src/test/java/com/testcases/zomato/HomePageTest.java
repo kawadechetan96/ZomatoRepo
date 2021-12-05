@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.base.zomato.TestBase;
-import com.pages.zomato.DelhiPage;
 import com.pages.zomato.HomePage;
 
 public class HomePageTest extends TestBase{
