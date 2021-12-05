@@ -1,5 +1,7 @@
 package com.pages.zomato;
 
-public class GoaPage {
+import com.base.zomato.TestBase;
+
+public class GoaPage extends TestBase{
 
 }
